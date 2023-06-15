@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #202124;
+    color: #bdc1c6;
+    font-size: 14px;
+    font-family: arial,sans-serif;
+    min-width: 300px;
+
+}
+
+.wrapper{
+    max-width: 100%;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 100vh;
+
+}
+
+.wrapper > *{
+    width: 100%;
+}
+
+.head{
+    display: flex;
+    justify-content: flex-end;
+    
+
+}
+
+.navigation{
+    display: flex;
+    gap: 1em;
+    padding: 20px;
+    align-items: center;
+}
+
+.navigation a{
+    color: #bdc1c6;
+    text-decoration: none;
+}
+
+.navigation .apps{
+    background-color: transparent;
+    border: none;
+}
+
+.navigation .person{
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    padding-top: 35px;
+   
+}   
+
+.container .searchcontainer{
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+    max-width: 600px;
+    gap: 1em;
+}
+
+
+
+.container .searchcontainer .image{
+    align-self: center;
+}
+
+
+
+.container .searchcontainer .mainsearch{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+
+.container .searchcontainer .mainsearch #search{
+    border: 1px solid #5f6368;
+    min-height: 44px;
+    border-radius: 22px;
+    display: flex;
+    align-items: center;
+    gap: .5em;
+
+}
+
+.container .searchcontainer .mainsearch #search:hover{
+    background-color: #303134;
+    box-shadow: 0 1px 6px 0 #171717;
+}
+
+.container .searchcontainer .mainsearch #search textarea{
+    resize: none;
+    background-color: transparent;
+    border: none;
+    flex: 6 1 350px;
+    caret-color: #bdc1c6;
+    outline: none;
+    color: #e8eaed;
+    
+}
+
+.container .searchcontainer .mainsearch #search button{
+    background-color: transparent;
+    border: none;
+    flex: 1 1 auto;
+    margin-right: 10px;
+
+}
+
+.container .searchcontainer .mainsearch #search img{
+    flex: 1 1 auto;
+    margin-left: 10px;
+    
+}
+
+.container .searchcontainer .mainsearch .searchbuttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    margin-top: 16px;
+
+}
+
+.container .searchcontainer .mainsearch .searchbuttons button{
+    background-color: #303134;
+    color: #e8eaed;
+    height: 40px;
+    border-radius: 4px;
+    padding: 10px;
+    border: none;
+    font-weight: 500;
+
+    
+}
+
+.container .searchcontainer .mainsearch .searchbuttons button:hover{
+    border: 1px solid #5f6368;
+}
+
+.container .searchcontainer .languages{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5em;
+    margin-top: 16px;
+
+}
+
+.container .searchcontainer .languages a{
+    color: #8ab4f8;
+    text-decoration: none;
+    
+}
+
+.wrapper footer{
+    display: flex;
+    position: absolute;
+    bottom: 0%;
+    flex-direction: column;
+    background-color: #171717;
+}
+
+.wrapper footer .country{
+    height: 50px;
+    border-bottom: 1px solid #5f6368;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 30px;    
+}
+
+.wrapper footer .footerlinks{
+    display: flex;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.wrapper footer .footerlinks .first{
+    display: flex;
+    justify-content: flex-start;
+    gap: 1em;
+    flex: 1 1 auto;
+    margin-left: 50px;
+}
+
+.wrapper footer .footerlinks .second{
+    display: flex;
+    justify-content: flex-end;
+    gap: 1em;
+    flex: 1 1 auto;
+    margin-right: 50px;
+    
+
+}
+
+.wrapper footer .footerlinks a{
+    color: #bdc1c6;
+    text-decoration: none;
+}
+
+.wrapper a:hover{
+    text-decoration: underline  !important;
+}
+
+
+
+@media (max-width: 600px){
+    .wrapper footer .footerlinks{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+    }
+
+    .wrapper footer .footerlinks .first{
+        margin-top: 20px;
+        margin-left: 0px;
+    }
+
+    .wrapper footer .footerlinks .second{
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
